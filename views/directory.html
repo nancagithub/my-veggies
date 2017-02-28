@@ -1,0 +1,21 @@
+<div class="content">
+    <button ng-click="order= 'name'">Order by Name</button>
+    <button ng-click="order = 'belt'">Order by Color</button>
+    <p>{{message}} says {{name}}</p>
+    <input type="text" ng-model="search" placeholder="Search for a Veg"/>
+    <ul id="vegs-list" class="directory">
+        <li ng-repeat="item in vegs | orderBy: order | filter: search" ng-show="item.available">
+          <img ng-src="{{item.thumb}}" ng-show="item.thumb" />
+          <h3>{{item.name}} - {{item.rate | currency: '€'}}</h3>
+          <div class="remove" ng-click="removeItem(item)">X</div>
+          <span class="belt" style="background: {{item.belt}}"> Veg color is {{item.belt}}</span>
+        </li>
+    </ul>
+    <form ng-submit="addVeg()">
+      <input type="text" placeholder="name" ng-model="newveg.name" />
+      <input type="text" placeholder="belt" ng-model="newveg.belt" />
+      <input type="text" placeholder="rate" ng-model="newveg.rate" />
+      <input type="submit" value="Add your fav veg" />
+    </form>
+    <a href="" ng-click="removeAll()">Remove All Veggies </a>
+</div>

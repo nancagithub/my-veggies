@@ -1,0 +1,33 @@
+[
+  {
+	"name": "Cabbage",
+	"belt": "purple",
+	"rate": 50,
+	"available": true,
+	"thumb": "content/img/purple.png"
+}, {
+	"name": "Capsicum",
+	"belt": "red",
+	"rate": 120,
+	"available": true,
+	"thumb": "content/img/red.png"
+}, {
+	"name": "Broccoli",
+	"belt": "green",
+	"rate": 20,
+	"available": true,
+	"thumb": "content/img/green.png"
+}, {
+	"name": "Potato",
+	"belt": "brown",
+	"rate": 202,
+	"available": true,
+	"thumb": "content/img/brown.png"
+}, {
+	"name": "Squash",
+	"belt": "orange",
+	"rate": 202,
+	"available": true,
+	"thumb": "content/img/orange.png"
+}
+]
